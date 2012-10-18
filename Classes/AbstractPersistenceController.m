@@ -42,9 +42,28 @@
 #pragma mark -
 #pragma mark NSFetchedResultsControllerDelegate methods
 
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller { 
-  [self controllerDidChangeContentAction:controller];
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    [self controllerDidChangeContentAction:controller];
+    [self.delegate controllerDidChangeContentAction:controller];
 }
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
+           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
+{
+    [self.delegate controller:controller didChangeSectionAction:sectionInfo atIndex:sectionIndex forChangeType:type];
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
+       atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
+      newIndexPath:(NSIndexPath *)newIndexPath
+{
+    [self.delegate controller:controller didChangeObjectAction:anObject atIndexPath:indexPath forChangeType:type newIndexPath:newIndexPath];
+}
+-(void)controllerWillChangeContent:(NSFetchedResultsController *)controller{
+    [self.delegate controllerWillChangeContentAction:controller];
+    
+}
+
 
 
 #pragma mark -

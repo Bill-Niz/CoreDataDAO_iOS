@@ -133,7 +133,7 @@ static PersistenceManager* persistenceManager = nil;
   @try {
     NSError *error = nil;
     if (![[self managedObjectContext] save:&error]) {
-      NSLog(@"Unresolved error when saving context: %@, %@", [error localizedDescription]);
+      NSLog(@"Unresolved error when saving context: %@", [error localizedDescription]);
     }
   }
   @catch (NSException * e) {

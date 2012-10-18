@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B6C3A0162FA99C0065A3BB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B6C39F162FA99C0065A3BB /* Default-568h@2x.png */; };
 		17879AE3149FD065002E5E0B /* PersistenceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17879AE0149FD065002E5E0B /* PersistenceManager.m */; };
 		17879AE4149FD065002E5E0B /* AbstractPersistenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17879AE2149FD065002E5E0B /* AbstractPersistenceController.m */; };
 		17879AEF149FD245002E5E0B /* student.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17879AEE149FD245002E5E0B /* student.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01B6C39F162FA99C0065A3BB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		17879ADF149FD065002E5E0B /* PersistenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistenceManager.h; sourceTree = "<group>"; };
 		17879AE0149FD065002E5E0B /* PersistenceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistenceManager.m; sourceTree = "<group>"; };
 		17879AE1149FD065002E5E0B /* AbstractPersistenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractPersistenceController.h; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				01B6C39F162FA99C0065A3BB /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				01B6C3A0162FA99C0065A3BB /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

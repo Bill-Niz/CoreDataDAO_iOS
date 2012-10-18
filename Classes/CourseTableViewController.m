@@ -119,11 +119,11 @@
     titleLabel = [[[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 205.0f, 55.0f)] autorelease];
     titleLabel.tag = TITLE_TAG;
     titleLabel.font = [UIFont boldSystemFontOfSize:14.0f];
-    titleLabel.textAlignment = UITextAlignmentLeft;
+    titleLabel.textAlignment = NSTextAlignmentLeft;
     titleLabel.textColor = [UIColor blackColor];
     titleLabel.contentMode = UIViewContentModeScaleAspectFit;
     titleLabel.numberOfLines = 4;
-    titleLabel.lineBreakMode = UILineBreakModeMiddleTruncation;
+    titleLabel.lineBreakMode = NSLineBreakByTruncatingMiddle ;
     titleLabel.backgroundColor = [UIColor clearColor];
     
     [cell.contentView addSubview:titleLabel];
